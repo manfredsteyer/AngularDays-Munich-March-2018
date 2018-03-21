@@ -5,7 +5,6 @@
 
 
   <div class="alert alert-warning" *ngIf="showWarning" style="margin:20px;">
-
     <p>
       You haven't saved your modifications. Do you really want to leave me?
     </p>
@@ -16,6 +15,7 @@
   <div class="content">
     <p>Id: {{id}}</p>
     <p>ShowDetails: {{showDetails}}</p>
+    <pre>{{ flight | json }}</pre>
   </div>
 </div>
 
