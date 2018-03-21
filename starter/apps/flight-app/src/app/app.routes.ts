@@ -22,7 +22,7 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'flight-booking',
-    loadChildren: () => System.import('./flight-booking/flight-booking.module').then(m => m.FlightBookingModule),
+    loadChildren: './flight-booking/flight-booking.module#FlightBookingModule',
     data: {
       preload: false
     }
